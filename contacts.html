@@ -7,16 +7,51 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <body>
+  <body class="conBody">
     <style>
       .gif {
         position: absolute;
         top: 50px;
         right: 20px;
         width: 400px;
-        
       }
     </style>
+
+    <style>
+      .fade-in {
+        animation: fadeIn 3s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+
+    <style>
+      .slide-in {
+        animation: slideIn 1s ease-out;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <div class="slide-in">Contact Us!</div>
+
+    <h2 class="fade-in">Welcome to My Website</h2>
 
     <img src=https://tinyurl.com/3k4jdhvp alt="Are you angry? Contanct Us!"
     class="gif">
